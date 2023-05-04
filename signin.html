@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" media="all" href="/assets/application.debug-4daf6c8541eacadc903646c1711086d9395cdff8191f4d96c106bbc40c47b2ac.css" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="https://scontent.ftbs5-2.fna.fbcdn.net/v/t39.30808-6/293227747_164001739474891_8572453507563579563_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHC8NKxBOrQ0sa-1nArLOqTrWOMdM69WGWtY4x0zr1YZQW2wBb1KIkKLImj6Hhot6MMoJHcbryt2_uuYB72AvTW&_nc_ohc=29aVk4xG-LMAX855Lfn&_nc_ht=scontent.ftbs5-2.fna&oh=00_AT971pDOIbviLNITbP5DCVGUxQ1nT-Ncmft2kMVDySnC1Q&oe=635E0B41" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <!--  <link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/alk-sanet/css/alk-sanet.min.css">-->
+  <link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/alk-rounded-nusx-med/css/alk-rounded-nusx-med.min.css">
+
+
+  <meta charset="utf-8">
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="OMzg9PPYYl7bGBoyk6BDfXHTzVBeNohuXYjpbmJFZGuilUior7SL8IlIvWbo9GoZrp9TV1Rd7CyIOSudbBrGTw" />
+  
+  <link rel="stylesheet" media="all" href="/assets/admin.debug-81ba0c4fad540f66d952ff2ed49987e7662c7dce74b11bdc3df08115883a1372.css" data-turbolinks-track="reload" />
+  <link rel="stylesheet" media="all" href="/assets/application.debug-4daf6c8541eacadc903646c1711086d9395cdff8191f4d96c106bbc40c47b2ac.css" data-turbolinks-track="reload" />
+  <script src="/packs/js/application-b57d441aa5d5a6175ec2.js" data-turbolinks-track="reload"></script>
+</head>
+
+<body>
+<style>
+    .navbar {
+        height: 90px;
+    }
+
+    .header-block {
+        position: fixed;
+        z-index: 99;
+        width: 100%;
+    }
+
+    .my-item {
+        position: absolute !important;
+        right: 40px;
+    }
+
+    .my-item:hover {
+
+    }
+
+    @media only screen and (max-width: 991px) {
+        .navbar {
+            height: auto !important;
+        }
+
+        .my-item {
+            position: relative !important;
+            left: 0;
+        }
+    }
+
+    @media only screen and (max-width: 960px) {
+        .my-item {
+            position: static !important;
+        }
+    }
+
+    /*#*/
+    .navbar-nav li.nav-item a {
+        text-decoration: none;
+        transition: font-size 0.1s ease-in-out, text-decoration 0.2s ease-in-out;
+    }
+
+    .navbar-nav li.nav-item a:hover {
+        text-decoration: underline;
+    }
+    @media (max-width: 991px) {
+        .navbar-nav li:first-child {
+            margin-left: 10px !important;
+        }
+    }
+</style>
+<div class="header-block">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #243253 !important">
+    <a href="http://127.0.0.1:3000/"><img style="width:150px; margin-left: 25px" class="logo" src="/assets/logo-44dee26036bd99add13a47cc403d1ae47ba0d9861d64b1add8d19b5e385bcd63.png" /></a>
+    <button class="navbar-toggler" type="button" onclick="carouselBottom()" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav" style="font-size: 15px !important;">
+        <li class="nav-item" style="margin-left:50px;">
+          <a class="nav-link text-family" style="color:white" href="/products">პროდუქცია</a>
+        </li>
+        <li class="nav-item" style="margin-left: 10px">
+          <a class="nav-link text-family" style="color:white" href="/about_us">ჩვენს შესახებ</a>
+        </li>
+        <li class="nav-item" style="margin-left: 10px">
+          <a class="nav-link text-family" style="color:white" href="/contacts/new">კონტაქტი</a>
+        </li>
+        <li class="nav-item" style="margin-left: 10px">
+          <a class="nav-link text-family" style="color:white" href="/delivery_politics">მიწოდების პოლიტიკა</a>
+        </li>
+        <li class="nav-item" style="margin-left: 10px">
+          <a class="nav-link text-family" style="color:white" href="#">კალკულატორი</a>
+        </li>
+        <li class="nav-item my-item" style="margin-left: 10px">
+          <a class="nav-link text-family" style="color:white" href="#">ჩემი შეკვეთა</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<div class="container" style="max-width: 100%; background-color: #f3f5ec; padding-top: 6%">
+  <html lang="en">
+<head>
+  <title>Moarge - Admin</title>
+</head>
+<style>
+    .navbar{
+        display: none;
+    }
+    .container{
+        background-color: white !important;
+    }
+</style>
+<br>
+<br>
+<br>
+<div class="col-md-4 border shadow-lg" style="margin-left: 32%;background-color: #f3f5ec;border-radius: 4px">
+  <h1 class="text-family" style="margin-left: 35%;margin-top: 2%">მოარგე</h1>
+  <small style="margin-left: 36%" class="text-family">სისტემაში შესვლა</small>
+  <div style="margin-top: 2%">
+    <form class="new_user" id="new_user" action="/users/sign_in" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="QyuFTLt_dR5ogw7aBQH-UHim-sxLrZ5gTZEJmbMM2DKCp7LH06M7GMvVIh_up2mE3kznNiz3x21MU6BFyBPq-g" autocomplete="off" />
+      <div class="form-group" style="width: 60%;margin-left: 16%">
+        <label class="text-family" for="user_email">Email</label>
+        <input autofocus="autofocus" autocomplete="email" class="form-control text-family" placeholder="Email" type="email" value="" name="user[email]" id="user_email" />
+      </div>
+
+      <div class="form-group text-family" style="width: 60%;margin-left: 16%">
+        <label for="user_password_პაროლი">პაროლი</label>
+        <input autocomplete="current-password" class="form-control" placeholder="პაროლი" type="password" name="user[password]" id="user_password" />
+      </div>
+      <div class="form-group" style="margin-top: 4%">
+        <input type="submit" name="commit" value="შესვლა" class="btn shadow-sm text-family" style="background-color: #e1c597;width:200px;height:40px;margin-left: 29%" data-disable-with="შესვლა" />
+      </div>
+      <br>
+      <div class="form-group">
+        <a class="text-family" style="text-decoration:none; color: black;margin-top: 10%;font-size:15px" href="http://127.0.0.1:3000/">მთავარ გვერდზე დაბრუნება</a>
+      </div>
+</form>  </div>
+
+</div>
+
+</html>
+</div>
+
+<script async nonce="" type="text/javascript" id="mini-profiler" src="/mini-profiler-resources/includes.js?v=35a79b300ab5afa978cb59af0b05e059" data-css-url="/mini-profiler-resources/includes.css?v=35a79b300ab5afa978cb59af0b05e059" data-version="35a79b300ab5afa978cb59af0b05e059" data-path="/mini-profiler-resources/" data-current-id="bocqyrltrwe67whagus0" data-ids="bocqyrltrwe67whagus0" data-horizontal-position="left" data-vertical-position="top" data-trivial="false" data-children="false" data-max-traces="20" data-controls="false" data-total-sql-count="false" data-authorized="true" data-toggle-shortcut="alt+p" data-start-hidden="false" data-collapse-results="true" data-html-container="body" data-hidden-custom-fields="" data-turbo-permanent="false"></script>
+</body>
+</html>
