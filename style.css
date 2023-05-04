@@ -1,4 +1,23 @@
-
+.btn{
+  color: white;
+}
+.product-nav-div-type{
+  color: white;
+}
+.person_icon{
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 0;
+  margin: 8px 160px;
+}
+.basket_icon{
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 0;
+  margin: 8px 340px;
+}
 .sidebar {
   margin: 0;
   padding: 0;
@@ -33,10 +52,10 @@ div.content {
 }
 
 .texts {
-  color: black;
+  color: white;
 }
 
-//Responsive
+/* //Responsive */
 @media screen and (max-width: 1300px) {
   .sidebar {
     width: 100%;
